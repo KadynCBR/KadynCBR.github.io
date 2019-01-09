@@ -145,6 +145,7 @@ header {
   .avatar {
     display: block;
     margin-bottom: $spacing-s;
+    text-align: center;
     img {
       width: 6em;
       height: 6em;
@@ -158,6 +159,7 @@ header {
     h1 {
       @extend h3;
       margin: 0;
+      text-align: center;
     }
     p {
       font-size: 90%;
