@@ -2,10 +2,7 @@ github_users:
   - KadynCBR
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - kadyncbr/ros_here
+  - kadyncbr/textcompress
+  - kadyncbr/mk0_ros
+  - kadyncbr/ezcuda

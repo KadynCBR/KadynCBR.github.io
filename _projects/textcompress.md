@@ -1,10 +1,11 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
+title: TextCompress
+description: Parallel text compression
+img: assets/img/project_textcompress.jpg
+redirect: https://github.com/KadynCBR/textcompress/blob/main/report.md
 importance: 1
-category: work
+category: Other
 ---
 
 Every project has a beautiful feature showcase page.
