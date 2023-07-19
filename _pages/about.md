@@ -5,7 +5,7 @@ permalink: /
 subtitle: Engineeer. Bossa Nova Enthusiast. Hip Hop. Recovering Roboticist. Game Dev.
 
 profile:
-  align: left
+  align: right
   image: shockedaimi.webp
   image_circular: true # crops the image to make it circular
 
