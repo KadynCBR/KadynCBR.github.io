@@ -6,9 +6,9 @@ title: blank
 first_name: Kadyn
 middle_name: S.
 last_name: Martinez
-email: kadyn_martinez@hotmail.com
+email: 
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Kadyn Martinez's online portfolio and presence.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -41,7 +41,7 @@ repo_theme_dark: dark           # https://github.com/anuraghazra/github-readme-s
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: false
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -68,33 +68,13 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # -----------------------------------------------------------------------------
 
 github_username: KadynCBR # your GitHub user name
-gitlab_username: # your GitLab user name
 twitter_username: RiotingCherry # your Twitter handle
 linkedin_username: kadynmartinez # your LinkedIn user name
-scholar_userid: # your Google Scholar ID
-semanticscholar_id: # your Semantic Scholar ID
-orcid_id: # your ORCID ID
-medium_username: # your Medium username
-quora_username: # your Quora username
-publons_id: # your ID on Publons
-research_gate_profile: # your profile on ResearchGate
-blogger_url: # your blogger URL
-work_url: # work page URL
-keybase_username: # your keybase user name
-wikidata_id: # your wikidata id
-dblp_url: # your DBLP profile url
-stackoverflow_id: # your stackoverflow id
-kaggle_id: # your kaggle id
-lastfm_id: # your lastfm id
-spotify_id: # your spotify id
-pinterest_id: # your pinterest id
-unsplash_id: # your unsplash id
-instagram_id: # your instagram id
-facebook_id: # your facebook id
-discord_id: # your discord id (18-digit unique numerical identifier)
+
 
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  See my resume for email and further contact information. Otherwise Twitter will be the best way to get ahold of me.
+  
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification

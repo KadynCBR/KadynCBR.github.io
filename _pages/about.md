@@ -18,6 +18,6 @@ Kadyn is a passionate Software Engineer specializing in robotics development and
 
 Driven by a love for learning and problem-solving, Kadyn has developed expertise in various programming languages and enjoys exploring new technologies. Their proficiency extends to 3D modeling and game development, where they bring ideas to life through immersive experiences.
 
-While Kadyn hasn't garnered notable achievements yet, their dedication and tenacity propel them to tackle challenges head-on, approaching them with a rushdown mentality. Despite their driven nature, Kadyn also believes in striking a balance by appreciating the relaxing aspects of life.
+Their dedication and tenacity propel them to tackle challenges head-on, approaching them with a rushdown mentality. Despite their driven nature, Kadyn also believes in striking a balance by appreciating the relaxing aspects of life.
 
 Beyond the realm of software development, Kadyn indulges in their interests, which include learning languages, playing fighting games, and embracing the joy of programming. Through their work, Kadyn aspires to create innovative solutions while savoring the process and finding fulfillment in every project.
