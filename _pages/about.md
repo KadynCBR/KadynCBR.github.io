@@ -14,8 +14,10 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Kadyn is a passionate Software Engineer specializing in robotics development and game development. With a strong educational background as a graduate from CSU Chico, Kadyn has acquired the necessary skills to excel in the field.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Driven by a love for learning and problem-solving, Kadyn has developed expertise in various programming languages and enjoys exploring new technologies. Their proficiency extends to 3D modeling and game development, where they bring ideas to life through immersive experiences.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+While Kadyn hasn't garnered notable achievements yet, their dedication and tenacity propel them to tackle challenges head-on, approaching them with a rushdown mentality. Despite their driven nature, Kadyn also believes in striking a balance by appreciating the relaxing aspects of life.
+
+Beyond the realm of software development, Kadyn indulges in their interests, which include learning languages, playing fighting games, and embracing the joy of programming. Through their work, Kadyn aspires to create innovative solutions while savoring the process and finding fulfillment in every project.
