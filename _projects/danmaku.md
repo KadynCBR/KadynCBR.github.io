@@ -21,6 +21,17 @@ category: Game Dev
         Screen space effects and shaders (glitch on hit)
  -->
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/txsRaaYUU8o" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+<div class="caption">
+    First level video demo
+</div>
+
 ## Summary & Purpose
 Danmaku was originally a gamejam title that I felt compelled to finish up as it was simple but also had a lot of promise in terms technical challenge. I'll discuss the key interesting things as well as provide a brief video playthrough of the level. The game should be on itch.io soon for download.
 
@@ -46,6 +57,8 @@ Discussion points:
 <div class="caption">
     On the left, our ship playable character. Middle, combat encounter with enemy ships. Right, the introduction cutscene frame for the first boss fight.
 </div>
+
+---
 
 <!-- Behavior Tree AI -->
 ## Behavior Tree AI
@@ -79,6 +92,8 @@ Discussion points:
 
 For enemy AI, I wanted more practice with working with behavior trees. The above display the behavior trees I've created. A lot of these have simple nodes but there are also a few custom nodes that I made specifically for that enemy or that combat encounter.
 
+---
+
 <!-- Smart Pooling Bullet Objects -->
 ## Smart Pooling Bullet Objects
 <div class="row">
@@ -99,8 +114,14 @@ Once a bullet has run its course or made impact, instead of destroying, it notif
 
 Doing this removes the constant overhead of creating and deleting bullets.
 
+---
+
 <!-- Scriptable Object Event Architecture -->
 ## Scriptable Object Event Architecture
+This game was made with a strong lean into Scriptable Object Event Architecture.
+This <a href="https://www.youtube.com/watch?v=raQ3iHhE_Kk">talk</a> was pretty inspiring to try using events to decouple a lot of the systems talked about here. I found I really enjoyed working with this paradigm, despite it not having as clear a paper trail as traditional dependency injection in unity. The benefits far outweight the cons in my head as a lot of these systems I made are easily portable to other projects. I extended the methods discussed in the talk quite a bit, adding generics and parameters to events, as well as making special Scriptable Object variables to house custom data types and the like. 
+
+---
 
 <!-- Custom Tools for map creation -->
 ## Custom Map Creation Tools
@@ -152,6 +173,8 @@ public void CreateMap()
 }
 ```
 {% endraw %}
+
+---
 
 <!-- Procedually Generated Animations -->
 ## Procedually Generated Animations
