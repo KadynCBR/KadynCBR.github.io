@@ -58,14 +58,26 @@ Discussion points:
 
 <!-- Custom Tools for map creation -->
 ### Custom Map Creation Tools
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/dmku/im5.png" title="Level" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/dmku/pixil-black.png" title="Pixel source" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Left, level created. Right, pixel map used to generate left.
+</div>
+
+
 
 <!-- Procedually Generated Animations -->
 ### Procedually Generated Animations
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://youtu.be/36ifthpvv_0" allowfullscreen></iframe>
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/36ifthpvv_0" allowfullscreen></iframe>
         </div>
     </div>
 </div>
@@ -74,7 +86,6 @@ Discussion points:
 </div>
 
 ### World Transition Gimmick
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/dmku/transition.gif" title="World Transition" class="img-fluid rounded z-depth-1" %}
