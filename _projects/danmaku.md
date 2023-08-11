@@ -22,7 +22,7 @@ category: Game Dev
  -->
 
 ## Summary & Purpose
-Danmaku was originally a gamejam title that I felt compelled to finish up as it was simple but also had a lot of promise in terms technical challenge. I'll discuss the key interesting things as well as provide a brief video playthrough of the level. The game should be on itch.io for download. [ITCHLINK]
+Danmaku was originally a gamejam title that I felt compelled to finish up as it was simple but also had a lot of promise in terms technical challenge. I'll discuss the key interesting things as well as provide a brief video playthrough of the level. The game should be on itch.io soon for download.
 
 Discussion points:
     - Behavior Tree AI
@@ -49,9 +49,36 @@ Discussion points:
 
 <!-- Behavior Tree AI -->
 ### Behavior Tree AI
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lZm9WcnWrLE" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+<div class="caption">
+    The behavior tree for the first boss.
+</div>
 
 <!-- Smart Pooling Bullet Objects -->
 ### Smart Pooling Bullet Objects
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lZm9WcnWrLE" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+<div class="caption">
+    There's a lot of bullets to manage. They all pretty much manage themselves though, which is nice. I enjoy my create and forget objects. 
+</div>
+Since this game was intended to be a sort of bullet hell game, I wanted to manage the many bullets that were going to be on screen at the same time in an efficient manner. To this end I created a bullet manager to accomplish this. 
+
+Anytime a bullet is required by an entity it asks this level-wide manager. The manager then checks to see if a bullet is available in the queue, if it is, it will enable it and set it up as required. If not, it will create a new bullet. 
+
+Once a bullet has run its course or made impact, instead of destroying, it notifies the bullet manager, and places itself back into a queue ready to be used for the next time the bullet manager needs a new bullet. 
+
+Doing this removes the constant overhead of creating and deleting bullets.
 
 <!-- Scriptable Object Event Architecture -->
 ### Scriptable Object Event Architecture
@@ -69,8 +96,43 @@ Discussion points:
 <div class="caption">
     Left, level created. Right, pixel map used to generate left.
 </div>
+To make map generation easier, I implemented some map generation tooling which takes png images to create a level. The actual implementation is pretty simple with some unity editor tooling wrapped around it. We go through each pixel in the provided image, and then spaw the block or enemy at the calculated offset. This map is also automatically enrolled in the world shift gimmick discussed later. 
 
-
+{% raw %}
+```c#
+public void CreateMap()
+{
+    foreach (Texture2D map in maps)
+    {
+        int mapwidth = map.width;
+        int mapheight = map.height;
+        int xoffset = -(map.width) / 2;
+        int zoffset = -(map.height) / 2;
+        Color[] pixels = map.GetPixels();
+        float px, pz;
+        for (int i = 0; i < pixels.Length; i++)
+        {
+            px = i % mapwidth * distanceBetweenCells + xoffset;
+            pz = Mathf.Floor(i / mapwidth) * distanceBetweenCells + zoffset;
+            if (pixels[i].a == 0)
+                continue;
+            if (pixels[i] == Color.white)
+            {
+                CreateBlock(blocktype.WHITE, px, pz);
+            }
+            if (pixels[i] == Color.black)
+            {
+                CreateBlock(blocktype.BLACK, px, pz);
+            }
+            if (pixels[i].r > 0 && pixels[i].b == 0)
+            {
+                createEnemy(px, pz);
+            }
+        }
+    }
+}
+```
+{% endraw %}
 
 <!-- Procedually Generated Animations -->
 ### Procedually Generated Animations
