@@ -2,10 +2,23 @@
 layout: page
 title: Danmaku
 description: Unity twinstick shooter
-img: assets/img/1.jpg
+img: assets/img/dmku/im3.png
 importance: 3
 category: Game Dev
 ---
+
+<!-- 
+    Summary & Purpose
+        
+
+    noteable stuff:
+        Fully playable end to end game
+        behavior tree ai
+        Smart pooling bullets
+        Scriptable Object event architecture
+        proceedually Generated Animations
+        Screen space effects and shaders (glitch on hit)
+ -->
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
@@ -22,26 +35,26 @@ To give your project a background in the portfolio page, just add the img tag to
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/dmku/im1.png" title="Ship Activation" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/dmku/im2.png" title="Enemies and bullets" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/im3.png" title="Boss 1" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    On the left, our ship playable character. Middle, combat encounter with enemy ships. Right, the introduction cutscene frame for the first boss fight.
 </div>
-<div class="row">
+<!-- <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
     This image can also have a caption. It's like magic.
-</div>
+</div> -->
 
 You can also put regular text between your rows of images.
 Say you wanted to write a little bit about your project before you posted the rest of the images.
