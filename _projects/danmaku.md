@@ -16,6 +16,7 @@ category: Game Dev
         behavior tree ai
         Smart pooling bullets
         Scriptable Object event architecture
+        map tools from pixels
         proceedually Generated Animations
         Screen space effects and shaders (glitch on hit)
  -->
@@ -47,14 +48,18 @@ To give your project a background in the portfolio page, just add the img tag to
 <div class="caption">
     On the left, our ship playable character. Middle, combat encounter with enemy ships. Right, the introduction cutscene frame for the first boss fight.
 </div>
-<!-- <div class="row">
+
+
+### World Transition Gimmick
+
+<div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/dmku/transition.gif" title="World Transition" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
-</div> -->
+    World transition shifts color of the player character, but also shifts the world around it, allowing different obstacles or barriers to come into play.
+</div>
 
 You can also put regular text between your rows of images.
 Say you wanted to write a little bit about your project before you posted the rest of the images.
