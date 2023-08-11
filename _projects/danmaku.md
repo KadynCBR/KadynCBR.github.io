@@ -48,20 +48,39 @@ Discussion points:
 </div>
 
 <!-- Behavior Tree AI -->
-### Behavior Tree AI
+## Behavior Tree AI
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lZm9WcnWrLE" allowfullscreen></iframe>
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S4-dvw6AC48" allowfullscreen></iframe>
         </div>
     </div>
 </div>
 <div class="caption">
     The behavior tree for the first boss.
 </div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/dmku/im6.png" title="PixelMage AI Tree" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    An enemy AI Tree which teleports to avoid damage after fighting
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/dmku/im7.png" title="Action Combat AI" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    An unusued AI behavior tree designed for a more complex game I'm also doing.
+</div>
+
+For enemy AI, I wanted more practice with working with behavior trees. The above display the behavior trees I've created. A lot of these have simple nodes but there are also a few custom nodes that I made specifically for that enemy or that combat encounter.
 
 <!-- Smart Pooling Bullet Objects -->
-### Smart Pooling Bullet Objects
+## Smart Pooling Bullet Objects
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         <div class="embed-responsive embed-responsive-16by9">
@@ -81,10 +100,10 @@ Once a bullet has run its course or made impact, instead of destroying, it notif
 Doing this removes the constant overhead of creating and deleting bullets.
 
 <!-- Scriptable Object Event Architecture -->
-### Scriptable Object Event Architecture
+## Scriptable Object Event Architecture
 
 <!-- Custom Tools for map creation -->
-### Custom Map Creation Tools
+## Custom Map Creation Tools
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.html path="assets/img/dmku/im5.png" title="Level" class="img-fluid rounded z-depth-1" %}
@@ -135,7 +154,7 @@ public void CreateMap()
 {% endraw %}
 
 <!-- Procedually Generated Animations -->
-### Procedually Generated Animations
+## Procedually Generated Animations
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         <div class="embed-responsive embed-responsive-16by9">
@@ -147,7 +166,7 @@ public void CreateMap()
     To save time and allow for dynamic movement of this tripod character, I implemented inverse kinematics to procedually animate the character. This is easier done in game than in <a href="https://www.youtube.com/watch?v=xEQ1KPo9HM8">real life.</a>
 </div>
 
-### World Transition Gimmick
+## World Transition Gimmick
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/dmku/transition.gif" title="World Transition" class="img-fluid rounded z-depth-1" %}
