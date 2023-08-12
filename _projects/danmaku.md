@@ -36,12 +36,12 @@ category: Game Dev
 Danmaku was originally a gamejam title that I felt compelled to finish up as it was simple but also had a lot of promise in terms technical challenge. I'll discuss the key interesting things as well as provide a brief video playthrough of the level. The game should be on itch.io soon for download.
 
 Discussion points:
-    - Behavior Tree AI
-    - Smart pooling bullet objects
-    - Scritable Object Event Architecture
-    - Custom Tools for map creation
-    - Procedually Generated Animations
-    - World Transition Gimmick
+- Behavior Tree AI
+- Smart pooling bullet objects
+- Scritable Object Event Architecture
+- Custom Tools for map creation
+- Procedually Generated Animations
+- World Transition Gimmick
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -188,6 +188,8 @@ public void CreateMap()
 <div class="caption">
     To save time and allow for dynamic movement of this tripod character, I implemented inverse kinematics to procedually animate the character. This is easier done in game than in <a href="https://www.youtube.com/watch?v=xEQ1KPo9HM8">real life.</a>
 </div>
+
+---
 
 ## World Transition Gimmick
 <div class="row">
