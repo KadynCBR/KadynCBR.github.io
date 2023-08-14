@@ -1,80 +1,96 @@
 ---
 layout: page
 title: Wave Function Collapse
-description: unity procedural generation
-img: assets/img/1.jpg
+description: procedural generation (c#)
+img: assets/img/wfc/im4.png
 importance: 3
 category: Game Dev
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<!-- 
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+https://youtu.be/Cvgw9HQMHIg - unity wave function collapse driving
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+https://youtu.be/Wm6Zpu6kttw - unity wave function collapse preprocessing
+
+https://youtu.be/zTKVSR4AcPs - unity wave function collapse (not preprocessed)
+
+ -->
+
+## Summary & Purpose
+ I'm a big fan of procedual generation and randomness in video games, to that end I wanted to make a package for doing procedual map generation. I stumbled upon wave function collapse and it seemed to accomplish what we needed to do. I found implementations in python and C, which were for small bitmaps or images which generated the image below.
+
+ <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/wfc/im4.png" title="bitmap WFC" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    This is cool, but not immediately applicaple to what I need.
+</div>
+
+I ported a combination of these implementations to unity, while adding in the ability to use gameobjects and 3d models of "blocks" as cells. 
+
+ <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/wfc/im1.png" title="blocks" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    These are examples of simple modular "blocks" which I quickly mocked up in blender. From left to right, the tiles are: blank, intersection, straightaway, turn
+</div>
+
+Minimal setup in unity thanks to some custom editor tools allows me to quickly generate maps. 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zTKVSR4AcPs" allowfullscreen></iframe>
+        </div>
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    20x20 map generation (slowed down with artificial delete between iterations to help visualization)
 </div>
+
+A good start, but we can get even closer to an 'objective' level by making this a maze. The way we can do this is by preprocessing cells allowing for one "entrance" and one "exit". 
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Wm6Zpu6kttw" allowfullscreen></iframe>
+        </div>
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    20x20 map generation with preprocessing of cells (slowed down with artificial delete between iterations to help visualization)
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+This is cool and all but adding in a bit of playability goes a long way.
+(<a href="https://assetstore.unity.com/packages/tools/physics/prometeo-car-controller-209444"> Car controller scripts</a> not made by me, just a quick asset drop while using my procedually generated roads as a surface) 
 
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Cvgw9HQMHIg" allowfullscreen></iframe>
+        </div>
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Procedually generated roads to drift away on. :)
 </div>
 
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+This system is currently being used as is with different blocks in a roguelike action game I'm making where it generates a procedual maze for certain levels.
 
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/wfc/im2.png" title="maze generated" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.html path="assets/img/wfc/im3.png" title="maze path" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-```
-{% endraw %}
+<div class="caption">
+    Left the generated level the player is expected to traverse. Right the path through the generated maze. 
+</div>
