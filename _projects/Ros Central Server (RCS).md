@@ -5,6 +5,7 @@ description: Monitoring system to monitor and control robotic fleet
 img: assets/img/7.jpg
 importance: 3
 category: Robotics
+redirect: https://github.com/KadynCBR
 ---
 
 Every project has a beautiful feature showcase page.

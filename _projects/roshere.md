@@ -5,6 +5,7 @@ description: QoL docker container and ROS environment
 img: assets/img/7.jpg
 importance: 3
 category: Robotics
+redirect: https://github.com/KadynCBR/ros_here
 ---
 
 Every project has a beautiful feature showcase page.
