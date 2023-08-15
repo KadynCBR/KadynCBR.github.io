@@ -11,20 +11,10 @@
 - title: Skills
   type: list
   contents:
-    - C++
-    - C#
-    - C
-    - Python
-    - ROS
-    - ROS2
-    - OpenCV
-    - Unity
-    - Django
-    - Git
-    - Linux
-    - Docker
-    - Keras
-    - MySQL
+    - Languages: C++, C, C#, Python, JavaScript, MySQL
+    - Frameworks: ROS, ROS2, OpenCV, Django, Keras
+    - Game Engines: Unity
+    - Tools: Git, Linux, Docker
 
 - title: Education
   type: time_table
