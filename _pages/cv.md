@@ -4,5 +4,6 @@ permalink: /cv/
 title: cv
 nav: true
 nav_order: 4
-cv_pdf: example_pdf.pdf
+game_cv_pdf: Kadyn_Resume_G.pdf
+robot_cv_pdf: Kadyn_Resume_R.pdf
 ---
