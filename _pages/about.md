@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Engineeer. Bossa Nova Enthusiast. Hip Hop. Recovering Roboticist. Game Dev.
+subtitle: Engineeer. Bossa Nova Enthusiast. Hip Hop. Roboticist. Game Dev.
 
 profile:
   align: right
