@@ -5,7 +5,14 @@ layout: default
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">{{ page.title }} {% if page.game_cv_pdf %}<a href="{{ page.game_cv_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a>{% endif %}</h1>
+            <h1 class="post-title">{{ page.title }} 
+              {% if page.game_cv_pdf %}
+              <a href="{{ page.game_cv_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right">Game Dev<i class="fas fa-file-pdf"></i></a>
+              {% endif %}
+              {% if page.robot_cv_pdf %}
+              <a href="{{ page.robot_cv_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right" style="Margin-right: 50px;">Robotics<i class="fas fa-file-pdf"></i></a>
+              {% endif %}
+            </h1>
             <p class="post-description">{{ page.description }}</p>
           </header>
 
