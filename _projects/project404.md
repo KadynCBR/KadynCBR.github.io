@@ -4,7 +4,7 @@ title: Project 404
 description: Twin stick roguelike
 img: assets/img/1.jpg
 importance: 3
-category: Game Dev
+category: Unused
 ---
 
 Every project has a beautiful feature showcase page.
