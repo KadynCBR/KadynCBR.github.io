@@ -38,9 +38,9 @@ Danmaku was originally a gamejam title that I felt compelled to finish up as it 
 Discussion points:
 - Behavior Tree AI
 - Smart pooling bullet objects
-- Scritable Object Event Architecture
+- Scriptable Object Event Architecture
 - Custom Tools for map creation
-- Procedually Generated Animations
+- Procedurally Generated Animations
 - World Transition Gimmick
 
 <div class="row">
