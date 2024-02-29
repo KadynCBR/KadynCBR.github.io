@@ -26,7 +26,12 @@ Discussion points:
 - Subversioning
 - Full gameplay loop
 - Working with Unreal with the intent of shipping
-
+- 
+ <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/wfc/im4.png" title="bitmap WFC" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/PiratePlague/pp1.gif" title="Patching" class="img-fluid rounded z-depth-1" %}
@@ -76,4 +81,10 @@ There's a lot of little things I learned but nothing big enough to warrant its o
 
 You can play the game currently here:
 [Pirate Plague on Itch.io](https://kronoshark.itch.io/pirate-plague)
-
+ <div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <a href=https://kronoshark.itch.io/pirate-plague>
+        {% include figure.html path="assets/img/PiratePlague/piratelanding.png" title="Pirate Plague" class="img-fluid rounded z-depth-1" %}
+        </a>
+    </div>
+</div>

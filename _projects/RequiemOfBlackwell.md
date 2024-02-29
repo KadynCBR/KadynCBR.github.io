@@ -4,7 +4,7 @@ title: Requiem Of Blackwell
 description: Unreal Third-person Hack and Slash Character Action Game
 # img: assets/img/1.jpg
 importance: 3
-category: Game Dev
+category: unused
 ---
 
 Every project has a beautiful feature showcase page.
