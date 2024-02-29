@@ -2,79 +2,78 @@
 layout: page
 title: Pirate Plague
 description: Unreal strategy and management game
-# img: assets/img/1.jpg
+img: assets/img/PiratePlague/piratelanding.png
 importance: 3
 category: Game Dev
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<!-- 
+    Summary & Purpose
+        
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+    noteable stuff:
+        Working with a team of 5 people
+        Windows and Linux builds
+        full gameplay loop
+        Perforce.
+ -->
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## Summary & Purpose
+Pirate Plague is a gamejam game created for the PirateSoftware PirateJam #14. The jam ran for a duration of about 2 weeks and was probably the biggest jam I had attened in earnest thus far. I ended up having to be a free agent and found a team of 5 strangers to create a game with on the PirateSoftware discord. This marks the first time I've meaningfully worked in a group with other people. It's also one of my most complete projects to date as well as being a debut in the Unreal Engine. 
+
+Discussion points:
+- Working with a team
+- Subversioning
+- Full gameplay loop
+- Working with Unreal with the intent of shipping
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/PiratePlague/pp1.gif" title="Patching" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/PiratePlague/pp2.gif" title="Shooting" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/PiratePlague/pp3.gif" title="Chaos" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    Manage your time and your hands wisely, if anything is left unchecked it can get out of hand incredibly quickly.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+---
 
+## Teamwork makes the dream work
+I formed a team with 5 other people from the PirateSoftware discord, it went pretty well everyone was really agreeable throughout the time. This is very different from my usual projects where I'm normally doing everything. I ended up being asked to lead programming efforts due to prior experience with the engine and development in general. There were two other developers which I was leading, but they did well enough that its more like I was around to answer questions if even that. 
 
+We had come together and created a game design document adding suggestions and concerns from each persons individual area of expertise. This design document ended up being quite ambitious, which personally I'm a big fan of, however it became apparent about half way through we would need to triage the most important features to create a working minimum viable product.
+
+---
+
+## Subversioning
 <div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/PiratePlague/helixcore.png" title="Perforce" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+Working with 5 people from different areas of the game development process as well as different levels of experties it became quite apparent there was going to be a roadblock that I've yet to hit in unreal. Subversioning. Primarily, working with blueprints and git and multiple people do not make for a happy time. 
+
+Until this point I had worked exclusively in git not really minding the binary overwriting because I was the only one working on the system. Within the first 5 hours of working on this game we had 3 merge conflicts and 1 of them resulted in the loss of someones work. This wasn't really going to be sustainable for the next 24 hours nevermind the next 2 weeks. One of the members of the team worked in industry and recommended using perforce. This required quickly learning the minimum knowledge required to bootstrap a server on digital ocean as well as use the intergration with Unreal. It ended up working incredibly nicely and I can see why this might be used in broader industry. 
+
+While git can also handle locking of files, it think perforce seems to handle it much more nicely and in a way that requires any untangling unless something has gone very wrong. 
+
+It's also worth noting, to the weary traveler, do not add everything to the perforce repository. I believe either the "saved" or "deriveddatacache" folders were added, and that ended up causing everyones unreal engines to hang every 10 seconds while it attempted to modify files that were write locked. That issue took a bit to figure out. 
+
+---
+
+## Ship to ship
+Considering that this game was made for a gamejam I'm normally not so underpressure to finish these but this time with a team everyone had a hand in bringing this to completion on time. This is the first unreal engine game I've created which I've built and released to the public. it features both PC as well as Linux builds, and was tested and iterated on to work on a steam deck.
 
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+Where there isn't a whole lot of technical achievements in this game, it does mark the first time working as a team, and my first official publish of a game on PC. We shipped a title!
+There's a lot of little things I learned but nothing big enough to warrant its own section other than the above.
 
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+You can play the game currently here:
+[Pirate Plague on Itch.io](https://kronoshark.itch.io/pirate-plague)
+
