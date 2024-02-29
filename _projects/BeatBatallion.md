@@ -18,7 +18,7 @@ category: Game Dev
         enemy ai on beat
         Gameplay ability System
         Steam integration
-        continued support and and dev
+        continued support and dev
  -->
 
 <div class="row">
@@ -36,13 +36,13 @@ category: Game Dev
 Beat Battalion started out as a gamejam game, one week to do a rhythm game. I'm a big fan of rhythm games but not a fan of falling-note style games (ddr, fnf, etc.). Because of this my team and I decided to do a spin on an RPG by making it a rhythm game. Particularly we pulled a lot of inspiration from crypt of the necrodancer for movement, and then for mechanics we took inspiration from Final Fantasy XIV's raiding mechanics. The core premise was a game where you play with your friends as different RPG classes and need to coordinate to take down enemies, perform mechanics and dodge AOEs all while having to remain on the beat of the song playing. This game continued to be worked on and updated, and I hope to release it on steam when its in a more polished and stable state.
 
 Discussion points:
-- Online multiplayer rhythm game
-- Multiple characters and kits
-- RPG elements
-- Enemy ai on beat
-- Gameplay ability System
-- Steam integration
-- Continued support and and dev
+- Gameplay Ability System
+- RPG Elements
+- Multiple Characters And Kits
+- On The Beat
+- Online Multiplayer Rhythm Game
+- Steam Integration
+- Continued Support And Dev
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -61,12 +61,12 @@ Discussion points:
 
 ---
 
-## Gameplay ability System
+## Gameplay Ability System
 The project makes heavy use of unreal's Gameplay Ability System (GAS) to handle abilities and overall gameplay flow as it relates to these abilities. I had learned GAS through [This Course by Stephen Ulibarri](https://www.udemy.com/course/unreal-engine-5-gas-top-down-rpg) which ended up being up being an incredibly valuable resource not just for GAS but best practices for Unreal development. I debated adding that Aura project to this portfolio but instead thought it would be better if I was able to apply what I learned without guardrails of a course. 
 
 ---
 
-## RPG elements
+## RPG Elements
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/BeatBatallion/stats.png" title="Stats" class="img-fluid rounded z-depth-1" %}
@@ -76,7 +76,7 @@ With GAS, it makes RPG elements easier to implement, the game currently has few 
 
 ---
 
-## Multiple characters and kits
+## Multiple Characters And Kits
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/BeatBatallion/characters.png" title="Characters" class="img-fluid rounded z-depth-1" %}
@@ -125,7 +125,7 @@ After all this working with the Quartz subsystem was pretty great and suited my 
 
 ---
 
-## Online multiplayer rhythm game
+## Online Multiplayer Rhythm Game
 I've discussed RPG, I've talked about the rhythm elements. Our next topic is online.
 I want to say that the course I mentioned earlier in regards to GAS replication and the [Multiplayer Network Compendium](https://cedric-neukirchen.net/docs/category/multiplayer-network-compendium/) came in handy so much. I had already abided by the gameplay framework for most of my games thankfully but never did I appreciate it as much as I did until doing this. Aside from the regular learning experience that I'm sure everyone has I had some special cases that I think might be relevant to this game in particular but also helpful for the weary traveler. 
 
@@ -202,7 +202,7 @@ We did infact, do 'mo betta'.
 
 ---
 
-## Steam integration
+## Steam Integration
 We have RPG. We have rhythm. We have online. We now need a way to put everything together. Online only works if people can join. NAT punching, port forwarding, LAN, hamachi, on and on the list goes for methods. I instead opted to go for steam integration as this was my original target platform. Once the player is in from steam, the connection stays and is persistant until disconnect, even between levels. To test this we used the steam developer appid, and since we were only doing friend invites, we didn't need to handle matchmaking. This left the project in a pretty good place.
 
 <div class="row">
@@ -216,7 +216,7 @@ We have RPG. We have rhythm. We have online. We now need a way to put everything
 
 ---
 
-## Continued support and and dev
+## Continued support And Dev
 With all that, this is by far my most advanced push into the unreal engine and game development in general. This project is still being actively worked on and I hope to formally release it on steam for free to gauge interest on if I should continue this kind of game, or if this should just be a fun one off experience to be had among friends. 
 
 I'd like to thank [Kronoshark (Programmer / UI)](https://twitter.com/RuinLightStudio) and [JeruTea (3D Modeler + Animator / Artist)](https://www.artstation.com/jerutea) for helping with this project and continuing to provide their support! 
